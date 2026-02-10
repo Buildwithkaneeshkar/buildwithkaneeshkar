@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f1a;
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00ffd5;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.about, .projects {
+  padding: 60px 10%;
+}
+
+.card {
+  background: #151a2d;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
