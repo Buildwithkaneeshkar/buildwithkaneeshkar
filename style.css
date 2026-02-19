@@ -1,46 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0f1a;
-  color: white;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
 .hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  text-align: center;
+    text-align: center;
+    padding: 150px 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  opacity: 0.8;
+    font-size: 60px;
 }
 
 .btn {
-  margin-top: 20px;
-  padding: 12px 30px;
-  background: #00ffd5;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.about, .projects {
-  padding: 60px 10%;
+section {
+    padding: 80px 10%;
 }
 
 .card {
-  background: #151a2d;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills-grid span {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
 }
